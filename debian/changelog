@@ -1,0 +1,114 @@
+libtext-recordparser-perl (1.6.5-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Rename autopkgtest configuration file(s) as per new pkg-perl-
+    autopkgtest schema.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Remove data/ from debian/tests/pkg-perl/smoke-files.
+    The directory does not exist and cause failures in the updated
+    autopkgtest-pkg-perl.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+  * Update debian/upstream/metadata.
+  * Add build dependency on libmodule-install-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 26 Nov 2019 17:37:56 +0100
+
+libtext-recordparser-perl (1.6.5-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Import upstream version 1.6.5.
+  * Add debian/upstream/metadata.
+  * Add copyright/license for new Module::Install fragments.
+  * Update build and runtime dependencies.
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 29 May 2015 19:52:36 +0200
+
+libtext-recordparser-perl (1.6.3-1) unstable; urgency=low
+
+  * Imported Upstream version 1.6.3
+  * Add (build-)dependency for Text::Autoformat.
+    Add Build-Depends-Indep and Depends on libtext-autoformat-perl.
+  * Add Build-Depends-Indep on libpod-readme-perl
+  * Add Build-Depends-Indep on libpod-markdown-perl
+  * Wrap and sort fields in debian/control file
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 10 Aug 2013 16:51:09 +0200
+
+libtext-recordparser-perl (1.6.1-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 1.6.1
+  * Email change: Salvatore Bonaccorso -> carnil@debian.org
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+  * Update debian/copyright file information.
+    Update format to copyright-format 1.0 as released together with Debian
+    policy 3.9.3.
+    Update copyright years for debian/* packaging files.
+    Refer to Debian systems in general instead of Debian GNU/Linux systems
+    only.
+  * Bump Standards-Version to 3.9.4
+  * Update build-dependency for Module::Build 0.40 requirement
+  * Bump Debhelper compat level to 8.
+    Adjust versioned Build-Depends on debhelper to (>= 8)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Mon, 20 May 2013 19:19:08 +0200
+
+libtext-recordparser-perl (1.5.0-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Standards-Version 3.8.4 (no changes)
+
+  [ Salvatore Bonaccorso ]
+  * New upstream release
+  * debian/control:
+    - Drop Build-Depends-Indep on perl (>= 5.10) | libversion-perl and
+      perl (>= 5.10) | libmodule-build-perl as stable has this already
+      satisfied.
+    - Drop Depends on perl (>= 5.10) | libversion-perl
+    - Move perl to Build-Depends for Module::Build use.
+  * Add myself to Uploaders.
+  * debian/copyright: Refresh to revision 135 of DEP5 proposed format-
+    specification for machine-readable copyright files. Update
+    upstream's copyright years. Update debian/* packaging stanza.
+  * Bump Standards-Version to 3.9.1 (no changes needed).
+  * Convert to '3.0 (quilt)' source package format.
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Mon, 26 Jul 2010 19:37:36 +0200
+
+libtext-recordparser-perl (1.3.0-1) unstable; urgency=low
+
+  * Initial Release (Closes: #549243)
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Fri, 23 Oct 2009 20:38:03 -0400

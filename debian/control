@@ -1,0 +1,42 @@
+Source: libtext-recordparser-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               libmodule-install-perl
+Build-Depends-Indep: libclass-accessor-perl <!nocheck>,
+                     libgraphviz-perl <!nocheck>,
+                     libio-stringy-perl <!nocheck>,
+                     liblist-moreutils-perl <!nocheck>,
+                     libreadonly-perl <!nocheck>,
+                     libtest-exception-perl <!nocheck>,
+                     libtest-pod-coverage-perl <!nocheck>,
+                     libtest-pod-perl <!nocheck>,
+                     libtext-autoformat-perl <!nocheck>,
+                     libtext-tabulardisplay-perl <!nocheck>,
+                     perl
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtext-recordparser-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtext-recordparser-perl.git
+Homepage: https://metacpan.org/release/Text-RecordParser
+
+Package: libtext-recordparser-perl
+Architecture: all
+Depends: libclass-accessor-perl,
+         libio-stringy-perl,
+         liblist-moreutils-perl,
+         libreadonly-perl,
+         libtext-autoformat-perl,
+         ${misc:Depends},
+         ${perl:Depends}
+Recommends: libgraphviz-perl,
+            libtext-tabulardisplay-perl
+Description: module to parse record-oriented data in a text file
+ Text::RecordParser is a Perl module that extracts record-oriented data from
+ arbitrary text files. The most common example has records separated by
+ newlines and fields delimited by commas or tabs. This module aims to provide
+ a consistent interface for processing an arbitrary sequence of records in a
+ file, however they may be delimited. The data can then be extracted using
+ arrays or hashes.
